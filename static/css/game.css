@@ -1,0 +1,115 @@
+@font-face {
+    font-family: electronicFont;
+    src: url(../font/DS-DIGIT.TTF);}
+body{
+    background:url(../image/bg.jpg) no-repeat #000;
+}
+#button{
+    color: gold;
+    margin-right: -1350px;
+    margin-top: 10px;
+    border: 0;
+    border-radius: 50px;
+    color: white;
+    background: #5f55af;
+    padding: 15px 20px 16px 20px;
+    text-transform: uppercase;
+    background: linear-gradient(to right, #f72585 50%, #5f55af 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition:all 2s ease;
+}
+#button:hover {
+    background-position: left bottom;
+}
+.grid {
+    overflow:hidden;
+    /*margin-left:5px;*/
+    /*margin-right:55px;*/
+    background:rgba(0,0,0,0);
+    border-left:2px solid rgba(0,0,0,0);
+    border-top:2px solid rgba(0,0,0,0);
+    border-radius:5px;
+    background-clip:padding-box;
+    padding-left: 0;
+    padding-top: 0px;
+    margin-top: -50px;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+.grid>li {
+    float:left;
+    display:inline;
+    width: 20%;
+    height: 18%;
+    cursor: pointer;
+    padding-top:20px;
+    padding-bottom:20px;
+    text-align:center;
+
+    border-right:2px solid rgba(0,0,0,0);
+    border-bottom:2px solid rgba(0,0,0,0);
+    box-sizing:border-box;
+}
+.grid li.active {
+    background:  url(../image/box_green.svg) no-repeat center;
+    background-size: contain;
+}
+.grid li.error {
+    background:  url(../image/box_red.svg) no-repeat center;
+    background-size: contain;
+}
+.container {
+    text-align: center;
+}
+.des {
+    text-align: center;
+    font-size: 36px;
+    top: 0;
+    height: 10%;
+    font-family: electronicFont;
+    color: gold;
+}
+.circle{
+    font-size: 36px;
+}
+button{
+    outline: none!important;
+}
+ul {
+    list-style-type: disc;
+}
+li {
+    text-align: -webkit-match-parent;
+    background:url(../image/box.svg) no-repeat center;
+    background-size: contain;
+    color: gold;
+    font-size: 14px;
+    font-family: electronicFont;
+}
+::selection {
+    text-shadow: none;
+    background: #b3d4fc;
+}
+#start{
+    background: rgba(0, 0, 0, 0) url(../image/start.svg) no-repeat center;
+    border-color: rgba(0,0,0,0);
+    background-size: contain;
+    width: 5%;
+    height: 0;
+    padding-top: 4%;
+}
+#restart{
+    background: rgba(0, 0, 0, 0) url(../image/restart.svg) no-repeat center;
+    border-color: rgba(0,0,0,0);
+    background-size: contain;
+    width: 5%;
+    height: 0;
+    padding-top: 4%;
+}
+#game{
+    position: absolute;
+    width: 522px;
+    height: 369px;
+    margin-left: 522px;
+}
